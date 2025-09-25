@@ -1,7 +1,7 @@
    *{
             margin: 0;
             padding: 0;
-            /* box-sizing: border-box; */
+            box-sizing: border-box;
         } 
     :root {
       --primary: #2563eb;
@@ -139,6 +139,10 @@
       border-color: var(--primary);
       outline: none;
       background: #fff;
+    }
+    .asterisk{
+      color: var(--error);
+      margin-left: 4px;
     }
     .error-msg {
       color: var(--error);
