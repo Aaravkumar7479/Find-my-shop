@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Find My Shop</title>
+    <link   rel="stylesheet" href="login.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo-container" onclick="goToHome()">
+            <div class="logo-icon">FM</div>
+            <div class="site-name">Find My Shop</div>
+        </a>
+    </header>
+
+    <!-- Login Container -->
+    <div class="login-container"> 
+        <div class="login-card">
+            <div class="login-header">
+                <h1 class="login-title">Welcome Back</h1>
+                <p class="login-subtitle">Sign in to manage your shop</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                    <div class="error-message" id="emailError" style="display: none;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="password-wrapper">
+                        <input 
+                            type="password"
+                            
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button 
+                            type="button" 
+                            class="password-toggle" 
+                            onclick="togglePassword()"
+                            aria-label="Toggle password visibility"
+                        >
+                            
+                        </button>
+                    </div>
+                    <div class="error-message" id="passwordError" style="display: none;"></div>
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="remember" name="remember" class="checkbox">
+                    <label for="remember" class="checkbox-label">Remember me</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="loginBtn">
+                    Sign In
+                </button>
+
+                <div class="forgot-password">
+                    <a href="#" onclick="showForgotPassword()">Forgot your password?</a>
+                </div>
+
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <!-- <button type="button" class="btn btn-secondary" onclick="signUpRedirect()">
+                    Create New Account
+                </button> -->
+            </form>
+
+            <div class="signup-link">
+                Don't have an account? <a href="signup.html" onclick="signUpRedirect()">Sign up here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"> </script>
+    </body>
+</html>

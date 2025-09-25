@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+header h1 {
+  font-size: 1.8rem;
+  color: #007BFF;
+  text-transform:capitalize;
+  text-decoration: underline;
+}
+header p {
+  font-size: 1.1rem;
+  color:rgb(238, 26, 61);
+}
+
+/* Info Section */
+.info {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+/*.contact-buttons a:first-of-type {
+  
+}*/
+
+.btn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+.call { background: #007BFF; }
+.whatsapp { background: #25D366; }
+.email { background: #FF9800; }
+
+/* Timings */
+.timings {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Gallery */
+.gallery h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Call-to-Action */
+.cta {
+  text-align: center;
+  margin: 1rem 0;
+}
+.cta p{
+    text-transform:capitalize;
+    color:rgb(184, 4, 184);
+
+}
+.cta img.qr {
+  max-width: 150px;
+  margin: 0.5rem 0;
+}
+.cta button {
+  background: #007BFF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cta button:hover {
+  background: #0056b3;
+}
+/* QR Code Section */
+      
+
+#qrCodeContainer {
+            /* border: 1px solid hsl(0, 25%, 97%); */
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+        }
+        #downloadBtn {
+            text-decoration: none;
+            background-color:green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        
+        }
+        #downloadBtn:hover {
+            background-color:light green;
+        }
+        #copy-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            /* transition: background-color 0.3s; */
+        }
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  color: #777;
+}
+.zoom:hover{
+    transform:scale(0.9);
+}

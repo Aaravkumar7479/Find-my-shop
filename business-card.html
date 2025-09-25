@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business card</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="business-card.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1 id="shop-name">Gupta provision store</h1>
+      <p id="shop-tagline">Your friendly neighborhood store</p>
+    </header>
+
+    <!-- Info Section -->
+    <section class="info">
+      <h2>Owner : Gupta Raj</h2>
+      <h2>📍 Find Us</h2>
+      <p id="shop-address">123 Main Street, Patna, India</p>
+      <a
+        id="map-link"
+        href="https://goo.gl/maps/example"
+        target="_blank"
+        class="map-btn zoom"
+      >
+        <img
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-map-icon.png"
+          alt="map"
+          width="40"
+        />View on Google Maps</a
+      >
+
+      <div class="contact-buttons">
+        <a href="tel:+911234567890" class="btn call zoom"
+          ><img src="Icons/call-icon.png" alt="call icon" width="30" />
+          Call
+        </a>
+        <a
+          href="https://wa.me/911234567890"
+          target="_blank"
+          class="btn whatsapp zoom"
+          ><img
+            src="Icons/whatsApp-icon.png"
+            alt="whatsApp icon"
+            width="30"
+          />WhatsApp</a
+        >
+        <a href="mailto:shop@example.com" class="btn email zoom"
+          ><img src="Icons/gmail-icon.png" alt="email icon" width="30" />
+          Email</a
+        >
+      </div>
+
+      <div class="timings">
+        <h3>⏰ Opening Hours</h3>
+        <p>Mon–Sat: 9 AM-9 PM</p>
+        <p>Sun: Closed</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <h2>🏪 Our Store</h2>
+      <div class="gallery-grid">
+        <img src="images/front.png" alt="Storefront" />
+        <img src="images/product1.png" alt="Products" />
+        <img src="images/interior.png" alt="Interior" />
+        <img src="images/product2.png" alt="Products" />
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <p>Share this card with your friends !</p>
+      <!--<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/QR_Code_Example.svg" alt="QR Code" class="qr">-->
+      <div id="qrCodeContainer"></div>
+
+      <a href="#" class="zoom" id="downloadBtn" download="website-qr-code.png"
+        >Download QR Code</a
+      >
+
+      <div id="copy-link" class="zoom" onclick="copyLink()">Copy Link</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤️ by Find My Shop</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="business-card.js"></script>
+  </body>
+</html>
