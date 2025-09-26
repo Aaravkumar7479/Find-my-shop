@@ -22,7 +22,7 @@ It provides a simple and responsive interface where businesses can showcase thei
 ## 🛠️ Tech Stack
 
 * **Frontend:** HTML, CSS (Tailwind), JavaScript  
-* **Backend:** Node.js / Express  
+* **Backend:** Node.js / Express.js  
 * **Database:**  MySQL  
 * **Deployment:** Vercel  
 
@@ -40,8 +40,9 @@ We welcome contributions!
 git checkout -b feature-name
 git commit -m "Add feature description"
 git push origin feature-name
+```
 
-
+---
 
 ## 🌐 Deployment
 
