@@ -103,7 +103,7 @@
         signupForm.reset();
         setCaptcha();
         
-        // Redirect to login page after 1.5 seconds
+        // Redirect to login page after 1.5 seconds (i.e 1500 ms)
       setTimeout(function() {
       window.location.href = "login.html";
   }, 1500);

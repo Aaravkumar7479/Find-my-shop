@@ -7,7 +7,7 @@
             const loginBtn = document.getElementById('loginBtn');
             
             // Clear previous errors
-            clearErrors();
+            // clearErrors();
             
             // Basic validation
             let hasErrors = false;
@@ -42,15 +42,16 @@
             
             // Simulate API call
             try {
+                
                 await simulateLogin(email, password);
                 
                 // Show success message
-                showSuccess('Login successful! Redirecting to dashboard...');
+                showSuccess('Login successful ');
                 
                 // Simulate redirect after 2 seconds
                 setTimeout(() => {
                     console.log('Redirecting to dashboard...');
-                    // window.location.href = '/dashboard';
+                     window.location.href = 'business-card.html'; // Change to your target file
                 }, 2000);
                 
             } catch (error) {
@@ -80,3 +81,32 @@
             errorElement.textContent = message;
             errorElement.style.display = 'flex';
         }
+        
+        // Simulate an API login call
+        function simulateLogin(email, password) {
+            return new Promise((resolve, reject) => {
+                // Example: Accept any email/password for demo
+                setTimeout(() => {
+                    // You can add real checks here if needed
+                    if (email && password.length >= 6) {
+                        resolve();
+                    } else {
+                        reject(new Error('Invalid credentials'));
+                    }
+                }, 500); // Simulate network delay
+            });
+        }
+
+        function showSuccess(message) {
+    let successMsg = document.getElementById('successMsg');
+    if (!successMsg) {
+        successMsg = document.createElement('div');
+        successMsg.id = 'successMsg';
+        successMsg.className = 'success-msg';
+        document.querySelector('.login-card').prepend(successMsg);
+    }
+    successMsg.textContent = message;
+    successMsg.style.color = 'green';
+    successMsg.style.fontWeight = 'bold';
+    successMsg.style.display = 'block';
+}
