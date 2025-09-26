@@ -28,6 +28,28 @@ It provides a simple and responsive interface where businesses can showcase thei
 
 ---
 
+## 🤝 Contributing
+
+We welcome contributions!  
+
+### How to Contribute
+
+1. **Fork** the repository.  
+2. **Create a new branch** for your feature or bug fix:  
+```bash
+git checkout -b feature-name
+git commit -m "Add feature description"
+git push origin feature-name
+
+
+
+## 🌐 Deployment
+
+The project is deployed on **Vercel**.  
+Access it here: [Find My Shop Live](https://findmyshop-tau.vercel.app)
+
+---
+
 ## ⚙️ Installation & Setup
 
 Clone the repository:
