@@ -1,7 +1,7 @@
 # Find My Shop 🛍️
 
 **Find My Shop** is a web application that helps users discover and locate shops easily.  
-It provides a simple and responsive interface where businesses can showcase their shops and  customers can explore and share shop details with friends by QR code or link.
+It provides a simple and responsive interface where businesses can showcase their shops, and  customers can explore and share shop details with friends via QR code or link.
 
 ---
 
