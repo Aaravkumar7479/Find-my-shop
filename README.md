@@ -4,7 +4,7 @@
 It provides a simple and responsive interface where businesses can showcase their shops, and  customers can explore and share shop details with friends via QR code or link.
 
 ---
- Note : Remember me to add screenshot 
+
 ## 🚀 Features
 
   
